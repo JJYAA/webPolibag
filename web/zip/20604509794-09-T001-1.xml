@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"><ext:UBLExtensions><ext:UBLExtension><ext:ExtensionContent><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="signature20604509794">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ds:Reference URI="">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>KZIykjC2JFdvN3HqmbEMTCfl1yE=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>
+CVfTOZ6O/pD+YfMXJQdqiWthYSQ8Fo4XI0bOz5KRbBahywyhDUC1TAlI6heKL8s9LleSwWbAHWZg
+XuDCZzcdRoWrR4dQq5M5/Q4jIJSK8hhwbKrVPjTFxFMnioInDwsHsuDllqPrVyhfXoe1AVrmgqpO
+jBRWpbK+LgCxn10UUjKImi3jhjPNJ8Mi0VFLvdaZcUBzs+twMpoQWr9uGSrEqtfnQWZRReuw0Jlr
+BOsaRmviKaoyfoqYSzX3zbUlqPQNg1l2XTxAkttNbkEoSgd70IO1eQRm9DE5y2m9ja0i+Yy1sz0c
+AwcfZcvZm0Ejf2NtOCayrRMQKJlcMWWcUOmyYw==
+</ds:SignatureValue>
+<ds:KeyInfo>
+<ds:X509Data>
+<ds:X509SubjectName>.2.5.4.13=Certificado para Facturación Electrónica,.1.3.6.1.4.1.47286.30.2=RUC,.1.3.6.1.4.1.47286.30.3=20604509794,.1.3.6.1.4.1.47286.30.4=DNI,EMAILADDRESS=contabilidadgoldentrade@gmail.com,CN=NEIDA BEATRIZ SALVADOR PAUCAR,SERIALNUMBER=10044449,GIVENNAME=NEIDA BEATRIZ,SURNAME=SALVADOR PAUCAR,T=APODERADO,OU=ADMINISTRACIÓN,OU=20604509794,O=IMPORTACIONES GOLDEN S.A.C.,L=LIMA,C=PE</ds:X509SubjectName>
+</ds:X509Data>
+<ds:X509Data>
+<ds:X509Certificate>
+MIIIjjCCBnagAwIBAgIIfT5PbiNP6h8wDQYJKoZIhvcNAQELBQAwgbgxCzAJBgNVBAYTAkVTMUQw
+QgYDVQQHDDtCYXJjZWxvbmEgKHNlZSBjdXJyZW50IGFkZHJlc3MgYXQgd3d3LnVhbmF0YWNhLmNv
+bS9hZGRyZXNzKTEWMBQGA1UECgwNVUFOQVRBQ0EgUy5BLjEVMBMGA1UECwwMVFNQLVVBTkFUQUNB
+MRowGAYDVQQDDBFVQU5BVEFDQSBDQTEgMjAxNjEYMBYGA1UEYQwPVkFURVMtQTY2NzIxNDk5MB4X
+DTIxMDcwMTIwMDEwMFoXDTIzMDcwMTIwMDEwMFowggGhMQswCQYDVQQGEwJQRTENMAsGA1UEBwwE
+TElNQTEkMCIGA1UECgwbSU1QT1JUQUNJT05FUyBHT0xERU4gUy5BLkMuMRQwEgYDVQQLDAsyMDYw
+NDUwOTc5NDEYMBYGA1UECwwPQURNSU5JU1RSQUNJw5NOMRIwEAYDVQQMDAlBUE9ERVJBRE8xGDAW
+BgNVBAQMD1NBTFZBRE9SIFBBVUNBUjEWMBQGA1UEKgwNTkVJREEgQkVBVFJJWjERMA8GA1UEBRMI
+MTAwNDQ0NDkxJjAkBgNVBAMMHU5FSURBIEJFQVRSSVogU0FMVkFET1IgUEFVQ0FSMTAwLgYJKoZI
+hvcNAQkBFiFjb250YWJpbGlkYWRnb2xkZW50cmFkZUBnbWFpbC5jb20xEzARBgorBgEEAYLxNh4E
+DANETkkxGzAZBgorBgEEAYLxNh4DDAsyMDYwNDUwOTc5NDETMBEGCisGAQQBgvE2HgIMA1JVQzEz
+MDEGA1UEDQwqQ2VydGlmaWNhZG8gcGFyYSBGYWN0dXJhY2nDs24gRWxlY3Ryw7NuaWNhMIIBIjAN
+BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgBNCYqHIP43ZTeYk1MT2QGX1p26/T3ZHaflWR012
+08KkVwJrZt4GYdkYpA2PvRD84fl+8fTtwdc45InHhpzONWLj+udntHA/FSQtQWIlvMhHxn9W/qbP
+wYH6g5QrFPdOSSFRi6AzBtFXFGuF3GCtlm4QG/c/ewExjhkwPKNDIL1dVOu0Rursvza4LpZa6cjY
+J4YxwK0WRLjgC+sY8viRjE8+X/lKtnU7/039AaBkUt3x07mQyGVCxSxsVDlHIuUPY8Jjy6KHhK44
+yq2M9h/R7moa/dVf5m03gAzsRmyBC6evFWVSVLWF//ml4criy6iOIVXEwsCH3zDShADVR8gWuQID
+AQABo4ICrjCCAqowgdcGCCsGAQUFBwEBBIHKMIHHMFUGCCsGAQUFBzAChklodHRwOi8vd3d3LnVh
+bmF0YWNhLmNvbS9wdWJsaWMvZG93bmxvYWQvdHNwX2NlcnRpZmljYXRlcy9zdWJvcmRpbmF0ZTEu
+Y3J0MDYGCCsGAQUFBzABhipodHRwOi8vb2NzcDEudWFuYXRhY2EuY29tL3B1YmxpYy9wa2kvb2Nz
+cC8wNgYIKwYBBQUHMAGGKmh0dHA6Ly9vY3NwMi51YW5hdGFjYS5jb20vcHVibGljL3BraS9vY3Nw
+LzAdBgNVHQ4EFgQUWZKBLeMFOmzalIQC4VqsUrnGVxMwDAYDVR0TAQH/BAIwADAfBgNVHSMEGDAW
+gBQtce+wY3/1/eCDIkR/RBAwgU9N5TCBkAYDVR0gBIGIMIGFMIGCBgwrBgEEAYLxNgICAgIwcjA2
+BggrBgEFBQcCARYqaHR0cDovL3d3dy51YW5hdGFjYS5jb20vcHVibGljL3BraS9kcGMtcGUvMDgG
+CCsGAQUFBwICMCwMKkNlcnRpZmljYWRvIHBhcmEgRmFjdHVyYWNpw7NuIEVsZWN0csOzbmljYTCB
+jwYDVR0fBIGHMIGEMECgPqA8hjpodHRwOi8vY3JsMS51YW5hdGFjYS5jb20vcHVibGljL3BraS9j
+cmwvQ0Exc3Vib3JkaW5hZGEuY3JsMECgPqA8hjpodHRwOi8vY3JsMi51YW5hdGFjYS5jb20vcHVi
+bGljL3BraS9jcmwvQ0Exc3Vib3JkaW5hZGEuY3JsMA4GA1UdDwEB/wQEAwIGwDAdBgNVHSUEFjAU
+BggrBgEFBQcDAgYIKwYBBQUHAwQwLAYDVR0RBCUwI4EhY29udGFiaWxpZGFkZ29sZGVudHJhZGVA
+Z21haWwuY29tMA0GCSqGSIb3DQEBCwUAA4ICAQBXiXqlPe9oqIe8XJP/bAxewggoiLz90C1jy1j0
+j+NRReqWZJNYp919cb6l1JpMAo0VBIGiltu/OsswpoLUtvprAtlpRqeU5jBkzdsZ6AjjwVfBTiNc
+cY6B9vlmZNaNbbYM/Qjtd6Y5y/VGbsor9o2BEsUH2ZujlULM+NN8/lL7W6IcdEgzcMKwTWh/G0AG
+6WnvsmfvucgZJh9/VCfKc+3c6dYgT/cWOWyUcapcNCHL2M/KndLbqVNssIdeR/JaBIOSk6tSDxcu
+v1l3C06kgzt6y8noxnacy3dXk8M4LLVQInwofOtDsCc7PX6ZuHjIgoVVo5C+AfzTrCaNgWpM5eag
+b1tOG9WAevxfnR/xeiuRMqmCWDUsOJJh4Hz2NS+QiFGqtrrcku5Bt9lC/EUYBzA3QPiw+e4FwJxf
+yxdhhjLAyeKgYSsjtWnWt/SQZkYhPsASLXxrzH/r1UYOfRfbe+IKSnfTi4TndXgvAy2RPMjmLQOo
+C2DsxMH5Bq2yNVSqlpHQkFjRALdGdA4ELRdg161KQ6Im8D/fvRIB+gVOSbOosyLe8scNT3OPQknt
+PRReEAAiBeUGD/PBx/NKpvP5t4NSxM6D2jbFwWL9X4UM56tRTizZvoAWvu0UZX0pVNPU1smo7+io
+gRO080SrJgPPWCAZY1/19+g1fPlAf5NHDmcsLw==
+</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</ds:Signature></ext:ExtensionContent></ext:UBLExtension></ext:UBLExtensions><cbc:UBLVersionID>2.1</cbc:UBLVersionID><cbc:CustomizationID>2.0</cbc:CustomizationID><cbc:ID>T001-1</cbc:ID><cbc:IssueDate>2023-04-01</cbc:IssueDate><cbc:DespatchAdviceTypeCode listAgencyName="PE:SUNAT" listName="Tipo de Documento" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo01">09</cbc:DespatchAdviceTypeCode><cbc:Note/><cac:Signature><cbc:ID>20604509794</cbc:ID><cac:SignatoryParty><cac:PartyIdentification><cbc:ID>20604509794</cbc:ID></cac:PartyIdentification><cac:PartyName><cbc:Name>IMPORTACIONES GOLDEN SAC</cbc:Name></cac:PartyName></cac:SignatoryParty><cac:DigitalSignatureAttachment><cac:ExternalReference><cbc:URI>20604509794-T001-1</cbc:URI></cac:ExternalReference></cac:DigitalSignatureAttachment></cac:Signature><cac:DespatchSupplierParty><cac:Party><cac:PartyIdentification><cbc:ID schemeAgencyName="PE:SUNAT" schemeID="6" schemeName="Documento de Identidad">20604509794</cbc:ID></cac:PartyIdentification><cac:PartyLegalEntity><cbc:RegistrationName><![CDATA[IMPORTACIONES GOLDEN SAC]]></cbc:RegistrationName></cac:PartyLegalEntity></cac:Party></cac:DespatchSupplierParty><cac:DeliveryCustomerParty><cac:Party><cac:PartyIdentification><cbc:ID schemeAgencyName="PE:SUNAT" schemeID="6" schemeName="Tipo de Documento">20609686139</cbc:ID></cac:PartyIdentification><cac:PartyLegalEntity><cbc:RegistrationName><![CDATA[GRUOP PANDA S.R.L.]]></cbc:RegistrationName></cac:PartyLegalEntity></cac:Party></cac:DeliveryCustomerParty><cac:Shipment><cbc:ID>01</cbc:ID><cbc:HandlingCode listAgencyName="PE:SUNAT" listName="Motivo de traslado" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo20"><![CDATA[01]]></cbc:HandlingCode><cbc:Information><![CDATA[Ventas]]></cbc:Information><cbc:GrossWeightMeasure unitCode="KGM">12.500</cbc:GrossWeightMeasure><cbc:SplitConsignmentIndicator>true</cbc:SplitConsignmentIndicator><cac:ShipmentStage><cbc:TransportModeCode listAgencyName="PE:SUNAT" listName="Motivo de traslado" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo18"><![CDATA[02]]></cbc:TransportModeCode><cac:TransitPeriod><cbc:StartDate>2023-04-01</cbc:StartDate></cac:TransitPeriod><cac:CarrierParty><cac:PartyIdentification><cbc:ID schemeID="6"><![CDATA[20604509794]]></cbc:ID></cac:PartyIdentification></cac:CarrierParty></cac:ShipmentStage><cac:Delivery><cac:DeliveryAddress><cbc:ID schemeAgencyName="PE:INEI" schemeName="Ubigeos"><![CDATA[150101]]></cbc:ID><cbc:StreetName><![CDATA[datosGuia.getLlegada_descripcion().trim()]]></cbc:StreetName><cac:Country><cbc:IdentificationCode>PE</cbc:IdentificationCode></cac:Country></cac:DeliveryAddress></cac:Delivery><cac:OriginAddress><cbc:ID>150100</cbc:ID><cbc:StreetName><![CDATA[LIMA/LIMA/LIMA]]></cbc:StreetName><cac:Country><cbc:IdentificationCode>PE</cbc:IdentificationCode></cac:Country></cac:OriginAddress></cac:Shipment><cac:DespatchLine><cbc:ID>1</cbc:ID><cbc:DeliveredQuantity unitCode="NIU">2</cbc:DeliveredQuantity><cac:OrderLineReference><cbc:LineID>1</cbc:LineID></cac:OrderLineReference><cac:Item><cbc:Name>GRASS ARTIFICIAL 1.5cm</cbc:Name><cac:SellersItemIdentification><cbc:ID><![CDATA[S2011FLOR]]></cbc:ID></cac:SellersItemIdentification></cac:Item></cac:DespatchLine><cac:DespatchLine><cbc:ID>2</cbc:ID><cbc:DeliveredQuantity unitCode="NIU">2</cbc:DeliveredQuantity><cac:OrderLineReference><cbc:LineID>2</cbc:LineID></cac:OrderLineReference><cac:Item><cbc:Name>GRASS DE 1CM</cbc:Name><cac:SellersItemIdentification><cbc:ID><![CDATA[STM9759]]></cbc:ID></cac:SellersItemIdentification></cac:Item></cac:DespatchLine></DespatchAdvice>

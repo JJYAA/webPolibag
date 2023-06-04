@@ -1,0 +1,119 @@
+<title>PolibagPeru EIRL</title>   
+
+<!-- Viewport -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<%--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>--%>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- Meta -->
+<meta name="title" content="PolibagPeru EIRL"/>
+<meta name="Copyright" content="PolibagPeru EIRL"/> 
+<meta name="author" content="PolibagPeru EIRL -  Dpto. de Sistemas"/>
+<meta name="description" content="Lider mundial en el mercado de vehiculos en todo el mundo con el respaldo del grupo TOYOTA."/>
+<meta name="keywords" content="Toyota, Hino, Grupo Pana"/>
+<meta name="robots" content="all, index, follow"/>
+<meta name="subject" content="Toyota, Hino, Grupo Pana"/>        
+<meta name="distribution" content="Global"/>
+<meta http-equiv="pragma" content="no-cache"/>
+<meta http-equiv="cache-control" content="no-cache"/>             
+
+<link rel="canonical" href="http://www.grupopana.com.pe/"/>
+<meta property="og:title" content="PolibagPeru EIRL"/> 
+<meta property="og:site_name" content="PolibagPeru EIRL"/> 
+<meta property="og:url" content="http://www.grupopana.com.pe/"/> 
+<meta property="og:description" content="Lider mundial en el mercado de vehiculos en todo el mundo con el respaldo del grupo TOYOTA." />
+<meta property="og:type" content="website"/> 
+<meta property="og:locale" content="es_ES"/>      
+<meta property="article:author" content="http://www.grupopana.com.pe/"/>
+<meta property="article:publisher" content="http://www.grupopana.com.pe/"/>
+<meta property="og:image" content="favicon.png"/>
+
+<!-- Favicons --> 
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.png" type="text/css"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png"/>
+<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png"/>
+<link rel="apple-touch-icon" sizes="320x320" href="apple-touch-icon-320x320.png"/>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/fontawesome-all.min.css"/> 
+<link rel="stylesheet" type="text/css" href="js/libs/bootstrap/css/bootstrap.min.css"/>  
+<link rel="stylesheet" type="text/css" href="js/libs/jquery/theme/jquery-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="js/libs/footable/footable.core.min.css"/> 
+<link rel="stylesheet" type="text/css" href="js/libs/select2/select2.min.css"/> 
+<%--<link rel="stylesheet" type="text/css" href="js/libs/select2/select2-bootstrap.min.css"/>--%>
+<link rel="stylesheet" type="text/css" href="js/libs/bs-multiselect/bootstrap-multiselect.min.css"/> 
+<link rel="stylesheet" type="text/css" href="js/libs/datetimepicker/datetimepicker.min.css"/>     
+<link rel="stylesheet" type="text/css" href="js/libs/jquery-tags-input/jquery.tagsinput.min.css"/> 
+<link rel="stylesheet" type="text/css" href="js/libs/bs-submenu/bootstrap-submenu.min.css" />
+<!--<link rel="stylesheet" type="text/css" href="js/libs/toastr/toastr-own.css"/>-->
+<!--<link rel="stylesheet" type="text/css" href="js/libs/toast/jquery.toast.min.css"/>-->
+<!--<link rel="stylesheet" type="text/css" href="js/libs/bootstrap-select/css/bootstrap-select.min.css"/>
+<link rel="stylesheet" type="text/css" href="js/libs/bootstrap-select/css/bootstrap-select-style.css"/>-->
+<!--<link rel="stylesheet" type="text/css" href="js/libs/datatables/dataTables.bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="js/libs/datatables/responsive.bootstrap.min.css"/>-->
+<link rel="stylesheet" type="text/css" href="js/libs/datatables/datatables.min.css"/>
+<link rel="stylesheet" type="text/css" href="js/libs/swipebox/css/swipebox.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.min.css"/>
+
+
+
+
+
+<!-- JS -->
+<%--
+
+
+
+
+<script type="text/javascript" src="js/libs/jquery/jquery-3.2.1.min.js"></script> 
+<script type="text/javascript" src="js/libs/bootstrap/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/libs/jquery/theme/jquery-ui.min.js"></script> 
+<script type="text/javascript" src="js/libs/validate/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/libs/validate/additional-methods.min.js"></script>
+<script type="text/javascript" src="js/libs/validate/localization/messages_es_PE.min.js"></script>
+<script type="text/javascript" src="js/libs/footable/footable.min.js"></script>  
+<script type="text/javascript" src="js/libs/footable/footable.paginate.min.js"></script> 
+<script type="text/javascript" src="js/libs/footable/footable.filter.min.js"></script>
+<script type="text/javascript" src="js/libs/select2/select2.min.js"></script>
+<script type="text/javascript" src="js/libs/select2/es.min.js"></script>
+<script type="text/javascript" src="js/libs/fileinput/bootstrap.file-input.min.js"></script>
+<script type="text/javascript" src="js/libs/numeric/jquery.numeric_input.min.js"></script>
+<script type="text/javascript" src="js/libs/autotab/jquery.autotab.min.js"></script>
+<script type="text/javascript" src="js/libs/bs-multiselect/bootstrap-multiselect.js"></script> <!-- No usar version min (ipads antiguos se cae) -->
+<script type="text/javascript" src="js/libs/datetimepicker/jquery-ui-timepicker-addon.min.js"></script>
+<script type="text/javascript" src="js/libs/datetimepicker/jquery-ui-timepicker-es.min.js"></script>
+<script type="text/javascript" src="js/libs/mask/jquery.mask.min.js"></script>
+<script type="text/javascript" src="js/libs/jquery-tags-input/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="js/libs/bs-submenu/bootstrap-submenu.min.js"></script>
+<script type="text/javascript" src="js/libs/bs-submenu/bootstrap-submenu-ini.min.js"></script>
+<!--<script type="text/javascript" src="js/libs/blockui/jquery.blockUI.min.js"></script>-->
+<script type="text/javascript" src="js/libs/loading-overlay/loadingoverlay.js"></script> <!-- No usar version min (ipads antiguos se cae) -->
+<!--<script type="text/javascript" src="js/libs/toastr/toastr.min.js"></script>-->
+<!--<script type="text/javascript" src="js/libs/toast/jquery.toast.js"></script>--> <!-- No usar version min (ipads antiguos se cae) -->
+<!--<script type="text/javascript" src="js/libs/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="js/libs/bootstrap-select/js/i18n/defaults-es_CL.js"></script>-->
+<!--<script type="text/javascript" src="js/libs/datatables/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/libs/datatables/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript" src="js/libs/datatables/dataTables.responsive.min.js"></script>
+<script type="text/javascript" src="js/libs/datatables/responsive.bootstrap.min.js"></script>-->
+<script type="text/javascript" src="js/libs/datatables/datatables.min.js"></script>
+<script type="text/javascript" src="js/libs/swipebox/js/jquery.swipebox.min.js"></script>
+<script type="text/javascript" src="js/libs/sketch/sketch.min.js"></script>
+<script type="text/javascript" src="js/funciones/jsAjax.js"></script>
+<script type="text/javascript" src="js/funciones/jsGeneral.js"></script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="js/libs/html5shiv/html5shiv.js"></script>
+  <script src="js/libs/html5shiv/html5shiv-printshiv.js"></script>
+  <script src="js/libs/respond/respond.min.js"></script>
+<![endif]-->
+--%>

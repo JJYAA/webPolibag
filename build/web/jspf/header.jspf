@@ -1,0 +1,226 @@
+<%@page import="java.io.InputStream"%>
+<%@page import="java.util.Properties"%>
+<%@page import="pe.com.gp.util.Constantes"%>
+<%@page import="pe.com.gp.util.Util"%>
+<%@page import="pe.com.gp.entity.Usuario"%>
+<%@page import="java.util.Date"%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.text.DateFormat"%>
+
+<%
+    // Comprobando si la sesion esta activa
+    if (!Util.sesionEstaActiva(request)) {
+        response.sendRedirect("relogin.jsp");
+        return;
+    }
+
+    // Obteniendo la fecha actual del sistema
+    DateFormat hdrDateFormat = new SimpleDateFormat("dd/MM/yyyy");
+    Date hdrDate = new Date();
+
+    // Leyendo si el servidor es desarrollo o produccion
+
+%>
+
+<%-- Menu --%>
+<div class="navbar navbar-default nav-container">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand goloading" href="index.jsp">
+                <img width="130" height="34" alt="PolibagPeru EIRL" src="images/logo-empresa4-color.png" onerror="this.onerror=null; this.src='images/logo-empresa4-color.png'"/>
+                <span>WEB</span>
+            </a>
+        </div>
+
+        <div class="navbar-collapse collapse bs-submenu">
+            <ul class="nav navbar-nav" id="main-navbar">
+
+                <%-- V E N T A S--%>
+
+                <li class="dropdown menu-item-padre">
+                    <a href="javascript:void(0)" class="item-padre" data-toggle="dropdown" data-submenu="" aria-expanded="false">Archivos</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="GimAction.do?operacion=inicializa" tabindex="0" class="goloading">Ruta servidor</a>
+                        </li>                      
+                        <li>
+                            <a href="GimAction.do?operacion=inicializaCarga" tabindex="0" class="goloading">Actualizar DATOS de contabilidad en SQL</a>                            
+                        </li>                          
+                        <li>
+                            <a href="SecuenciaAction.do?operacion=inicializa" tabindex="0" class="goloading">Actualizar Secuencia</a>                            
+                        </li>                                                  
+                        <li>
+                            <a href="GimAction.do?operacion=init_datos_proveedor" tabindex="0" class="goloading">Datos Factura PROVEEDOR</a>                            
+                        </li>                          
+                    </ul>
+                </li>
+                <%-- PAGOS --%>
+                <li class="dropdown menu-item-padre">
+                    <a href="javascript:void(0)" class="item-padre" data-toggle="dropdown" data-submenu="" aria-expanded="false">Transferencia</a>
+                    <ul class="dropdown-menu">  
+                        <li class="dropdown-submenu">
+                            <a href="javascript:void(0)" tabindex="0">Ventas<span class="con-hijos"><%=Constantes.ICON_ANGLE_RIGHT%></span></a>
+                            <ul class="dropdown-menu"> 
+                                <li>
+                                    <a href="Trans_VentasAction.do?operacion=inicializa" tabindex="0" class="goloading">Asiento de ventas</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="CobranzasAction.do?operacion=inicializa" tabindex="0" class="goloading">Cobranzas</a> 
+                                </li>  
+                                                               
+                                <li class="divider"></li>                               
+                                <li>
+                                    <a href="CobranzasNuevoAction.do?operacion=inicializa" tabindex="0" class="goloading">Cobranzas por cliente</a> 
+                                </li>
+                                <li>
+                                    <a href="CobranzasNuevoAction.do?operacion=ini_operacion" tabindex="0" class="goloading">Editar conbranza por operación</a> 
+                                </li>          
+                                          
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="CobranzasAction.do?operacion=inicializaAsiento" tabindex="0" class="goloading">Transferencia de Cobranzas</a>
+                                </li>   
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="costoVentaAction.do?operacion=inicializa" tabindex="0" class="goloading">Costo de venta</a>
+                                </li>                                 
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="javascript:void(0)" tabindex="0">Compras<span class="con-hijos"><%=Constantes.ICON_ANGLE_RIGHT%></span></a>
+                            <ul class="dropdown-menu"> 
+                                <li>
+                                    <a href="ProvisionAction.do?operacion=inicializa" tabindex="0" class="goloading">Provision de documentos</a> 
+                                </li>                                 
+                                <li>
+                                    <a href="Trans_ComprasAction.do?operacion=inicializa" tabindex="0" class="goloading">Asiento de Compras</a> 
+                                </li>    
+                                <li>
+                                    <a href="PagosAction.do?operacion=inicializa" tabindex="0" class="goloading">Registro de pagos</a> 
+                                </li>   
+                                <li>
+                                    <a href="PagosAction.do?operacion=inicializaAsiento" tabindex="0" class="goloading">Transferencias de pagos</a> 
+                                </li>                                  
+                            </ul>                               
+                        </li>                                                                          
+                    </ul>
+                </li>
+                <%-- ADMINISTRATIVO --%>  
+                <li class="dropdown menu-item-padre">
+                    <a href="javascript:void(0)" class="item-padre" data-toggle="dropdown" data-submenu="" aria-expanded="false">Reportes</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="CobranzasAction.do?operacion=init_ListaDepositos" tabindex="0" class="goloading">Listado de depositos (Ventas)</a> 
+                            <a href="CobranzasAction.do?operacion=init_corte_cobrar" tabindex="0" class="goloading">Documento por Cobrar con corte</a>                             
+                        <li class="divider"></li>
+                        <li>
+                            <a href="AuditoriaAction.do?operacion=inicializa" tabindex="0" class="goloading">Auditoria Concar vs WEB</a>                             
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="AuditoriaAction.do?operacion=init_documentos" tabindex="0" class="goloading">Comprobantes por documentos</a>                             
+                        </li>   
+                        <li class="divider"></li>
+                        <li>
+                            <a href="PagarAction.do?operacion=inicializa" tabindex="0" class="goloading">Documento por pagar con corte</a>                              
+                        </li>                        
+                </li>
+
+            </ul>
+            </li>
+            <%-- GESTION --%>  
+            <li class="dropdown menu-item-padre">
+                <a href="javascript:void(0)" class="item-padre" data-toggle="dropdown" data-submenu="" aria-expanded="false">Gestion</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <li>
+                            <a href="UtilidadAction.do?operacion=inicializa" tabindex="0" class="goloading">Utilidas por documento</a> 
+                        </li>
+                        <li class="divider"></li>                           
+                        <li>
+                            <a href="Trans_VentasAction.do?operacion=init_ventas" tabindex="0" class="goloading">Registro de ventas</a>                             
+                        </li>                                                          
+                    </li>
+                </ul>
+            </li>                
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group username-doble-line">
+                    <span class="username" id="responsive-username">
+                        <span class="c_a_logout">&nbsp;&nbsp;&nbsp;<a data-toggle="modal" href="#logoutModal" title="Cerrar sesi&oacute;n" id="a_logout"><%=Constantes.ICON_EXIT%>&nbsp;Cerrar sesi&oacute;n</a></span>
+                    </span>
+                    <div id="c-login-info"> 
+                        <span class="username"><bean:write name="Usuario" property="nombre" />&nbsp;<%=Constantes.ICON_USER%>&nbsp;&nbsp;<bean:write name="Usuario" property="nomTienda" />&nbsp;&nbsp;&nbsp;<%=Constantes.ICON_COG%>&nbsp;PRODUCCION
+                            <span class="c_a_logout">&nbsp;&nbsp;<%=Constantes.ICON_EXIT%><a data-toggle="modal" href="#logoutModal" title="Cerrar sesi&oacute;n" id="a_logout">Cerrar sesi&oacute;n</a></span>
+                        </span>
+                        <span class="otherinfo"><bean:write name="Usuario" property="nomTienda" />
+                            &nbsp;&nbsp;<%=Constantes.ICON_TIMER%> <%=hdrDateFormat.format(hdrDate)%> - <span id="g_tiempo_ind">30:00</span>
+                        </span>
+                    </div>
+                </div>
+            </form>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<%-- Logout Modal --%>
+<div class="modal fade" id="logoutModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">                
+                <h4 class="modal-title">Mensaje del sistema</h4>
+            </div>
+            <div class="modal-body">
+                ¡ Hey <strong><bean:write name="Usuario" property="nombre"/></strong> !, ¿est&aacute;s seguro(a) que deseas abandonar el sistema?
+            </div>
+            <div class="modal-footer">
+                <a href="LoginAuxiliarAction.do?operacion=logout" class="btn btn-sm btn-danger goloading" title="Deseo salir"><%=Constantes.ICON_EXIT%> Deseo salir</a>
+                <a href="javascript:void(0)" class="btn btn-sm btn-primary" data-dismiss="modal" title="A&uacute;n me quedo!"><%=Constantes.ICON_THUMBS_UP%> A&uacute;n me quedo!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%-- Contador de tiempo de actividad --%>
+<script type="text/javascript">
+    var intervalo_timer;
+    var timeout_timer;
+    function iniTimerGlobal() {
+        var paginaLogout = "relogin.jsp";
+        var totalSegundos = 1800; // (30 min x 60 seg = 1800 seg       60 seg)
+        clearTimeout(timeout_timer);
+        clearInterval(intervalo_timer);
+        intervalo_timer = setInterval(setTime, 1000);
+
+        function setTime() {
+            if (totalSegundos <= 0) {
+                timeout_timer = setTimeout('location="' + paginaLogout + '"', 1);
+            }
+
+            if (totalSegundos > 0) {
+                totalSegundos -= 1;
+            }
+
+            var min = parseInt((totalSegundos / 60));
+            var seg = totalSegundos % 60;
+            document.getElementById('g_tiempo_ind').innerHTML = visor(min) + ":" + visor(seg);
+        }
+
+        function visor(val) {
+            var valString = val + "";
+            if (valString.length < 2) {
+                return "0" + valString;
+            } else {
+                return valString;
+            }
+        }
+    }
+
+    // Inicia contador de tiempo de actividad
+    iniTimerGlobal();
+</script>

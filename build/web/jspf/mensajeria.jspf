@@ -1,0 +1,31 @@
+<%@page import="pe.com.gp.util.Constantes"%>
+<logic:messagesPresent>
+    <%
+        String tipoMensaje = (String) request.getAttribute("tipoMensaje");
+        if ("error".equals(tipoMensaje)) {
+    %>
+    <div class='alert alert-danger fade in alert-dismissable'>
+        <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+        <%=Constantes.ICON_CLEAR%>
+        <strong>Error ! ... </strong> <html:errors/>   
+    </div>
+    <% } else if ("exito".equals(tipoMensaje)) {%>
+    <div class='alert alert-success fade in alert-dismissable'>
+        <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+        <%=Constantes.ICON_CHECK%>
+        <strong>&Eacute;xito ! ... </strong> <html:errors/>   
+    </div>
+    <%} else if ("info".equals(tipoMensaje)) {%>
+    <div class='alert alert-info fade in alert-dismissable'>
+        <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+        <%=Constantes.ICON_INFO%>
+        <strong>Informaci&oacute;n ! ... </strong> <html:errors/>
+    </div>
+    <%} else if ("alerta".equals(tipoMensaje)) {%>
+    <div class='alert alert-warning fade in alert-dismissable'>
+        <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
+        <%=Constantes.ICON_WARNING%>
+        <strong>Alerta ! ... </strong> <html:errors/>
+    </div>
+    <%}%>
+</logic:messagesPresent>

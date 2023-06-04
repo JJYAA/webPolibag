@@ -1,0 +1,58 @@
+<!-- Scripts -->
+<script type="text/javascript" src="js/libs/jquery/jquery-3.2.1.min.js"></script> 
+<script type="text/javascript" src="js/libs/bootstrap/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/libs/jquery/theme/jquery-ui.min.js"></script> 
+<script type="text/javascript" src="js/libs/validate/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/libs/validate/additional-methods.min.js"></script>
+<script type="text/javascript" src="js/libs/validate/localization/messages_es_PE.min.js"></script>
+<script type="text/javascript" src="js/libs/alphanum/jquery.alphanum.js"></script>
+<script type="text/javascript" src="js/libs/datatables/datatables.min.js"></script>
+<script type="text/javascript" src="js/libs/select2/select2.min.js"></script>
+<script type="text/javascript" src="js/libs/select2/es.min.js"></script>
+<script type="text/javascript" src="js/libs/footable/footable.min.js"></script>  
+<script type="text/javascript" src="js/libs/footable/footable.paginate.min.js"></script> 
+<script type="text/javascript" src="js/libs/footable/footable.filter.min.js"></script>
+<script type="text/javascript" src="js/libs/fileinput/bootstrap.file-input.min.js"></script>
+<!--<script type="text/javascript" src="js/libs/numeric/jquery.numeric_input.min.js"></script>-->
+<!--<script type="text/javascript" src="js/libs/autotab/jquery.autotab.min.js"></script>-->
+<script type="text/javascript" src="js/libs/bs-multiselect/bootstrap-multiselect.js"></script> <!-- No usar version min (ipads antiguos se cae) -->
+<script type="text/javascript" src="js/libs/datetimepicker/jquery-ui-timepicker-addon.min.js"></script>
+<script type="text/javascript" src="js/libs/datetimepicker/jquery-ui-timepicker-es.min.js"></script>
+<script type="text/javascript" src="js/libs/mask/jquery.mask.min.js"></script>
+<script type="text/javascript" src="js/libs/jquery-tags-input/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="js/libs/bs-submenu/bootstrap-submenu.min.js"></script>
+<script type="text/javascript" src="js/libs/bs-submenu/bootstrap-submenu-ini.min.js"></script>
+<!--<script type="text/javascript" src="js/libs/blockui/jquery.blockUI.min.js"></script>-->
+<!--<script type="text/javascript" src="js/libs/loading-overlay/loadingoverlay.js"></script>--> <!-- No usar version min (ipads antiguos se cae) -->
+<!--<script type="text/javascript" src="js/libs/toastr/toastr.min.js"></script>-->
+<!--<script type="text/javascript" src="js/libs/toast/jquery.toast.js"></script>--> <!-- No usar version min (ipads antiguos se cae) -->
+<!--<script type="text/javascript" src="js/libs/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="js/libs/bootstrap-select/js/i18n/defaults-es_CL.js"></script>-->
+<!--<script type="text/javascript" src="js/libs/datatables/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/libs/datatables/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript" src="js/libs/datatables/dataTables.responsive.min.js"></script>
+<script type="text/javascript" src="js/libs/datatables/responsive.bootstrap.min.js"></script>-->
+<script type="text/javascript" src="js/libs/swipebox/js/jquery.swipebox.min.js"></script>
+<script type="text/javascript" src="js/libs/sketch/sketch.min.js"></script>
+<!--<script type="text/javascript" src="js/funciones/jsAjax.js"></script>-->
+<script type="text/javascript" src="js/funciones/jsGeneral.js"></script>
+
+<!--
+
+-->
+
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="js/libs/html5shiv/html5shiv.js"></script>
+  <script src="js/libs/html5shiv/html5shiv-printshiv.js"></script>
+  <script src="js/libs/respond/respond.min.js"></script>
+<![endif]-->
+
+<!-- noscript -->
+<noscript>
+<div id="noscript">
+    <p>Para utilizar las funcionalidades completas de este sitio es necesario tener JavaScript habilitado. Aqu&iacute; est&aacute;n las <a href="http://www.enable-javascript.com/es/" target="_blank"> instrucciones para habilitar JavaScript en tu navegador web</a>.</p>
+</div>       
+</noscript>
+<!-- /noscript -->

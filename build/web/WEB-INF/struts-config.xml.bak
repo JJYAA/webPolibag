@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+    
+    <!-- ======================= Definciones Form Bean  ==================== -->
+    <form-beans> 
+        <form-bean name="LoginAuxForm" type="pe.com.gp.form.LoginForm" ></form-bean>
+        <form-bean name="GenericoForm" type="pe.com.gp.form.GenericoForm"></form-bean>
+        <!--<form-bean name="ReportesForm" type="pe.com.gp.form.ReportesForm"></form-bean>
+        <form-bean name="RepuestosForm" type="pe.com.gp.form.RepuestosForm" ></form-bean>  
+        <form-bean name="ProformaRepForm" type="pe.com.gp.form.ProformaRepForm"></form-bean>-->
+        <form-bean name="FacRepMostradorForm" type="pe.com.gp.form.FacRepMostradorForm"></form-bean>        
+        <form-bean name="OfertaVentaPedidoForm" type="pe.com.gp.form.OfertaVentaPedidoForm"></form-bean>
+        <form-bean name="LlamadaSerOfeVtaForm" type="pe.com.gp.form.LlamadaSerOfeVtaForm"></form-bean>
+        <form-bean name="LlamadaSerOrdVtaForm" type="pe.com.gp.form.LlamadaSerOrdVtaForm"></form-bean>
+        <form-bean name="RepFacturaVentasForm" type="pe.com.gp.form.RepFacturaVentasForm"></form-bean>
+        <form-bean name="LlamadaServicioForm" type="pe.com.gp.form.LlamadaServicioForm"></form-bean>
+        <form-bean name="TarjetaEquipoForm" type="pe.com.gp.form.TarjetaEquipoForm"></form-bean>
+        <form-bean name="SocioNegocioForm" type="pe.com.gp.form.SocioNegocioForm"></form-bean>
+    </form-beans>
+    
+    <!-- ======================= Definiciones Action  ====================== -->
+    <global-forwards>
+        <forward name="logout" path="/relogin.jsp"/>
+        <forward name="error" path="/error.jsp"/>
+    </global-forwards>
+
+    <action-mappings>                
+        <!-- 
+            - name      : nombre del form-bean
+            - path      : invocar desde la vista
+            - type      : nombre de la clase
+            - parameter : nombre del metodo en la clase
+            - forward   : redireccion 
+            - scope     : ambito
+        -->
+               
+        <!-- =============================================================== -->
+        <!-- L O G I N -->
+        <!-- =============================================================== -->
+        <action name="LoginAuxForm" scope="request" path="/LoginAuxiliar" type="pe.com.gp.action.LoginAuxiliarAction" parameter="operacion">
+            <forward name="Teclado" path="/wpTeclado.jsp" />
+            <forward name="mnuMain" path="/index.jsp" />
+            <forward name="recuperarPassword" path="/recuperarPassword.jsp" />
+            <forward name="submitDuplicado" path="/LoginAuxiliar.do?proceso=Teclado"></forward>
+            <!--<forward name="aprLiqOtEspecial" path="/AprobacionLiqOtEspAction.do?operacion=inicializa"></forward>
+            <forward name="aprOrdSalOT" path="/AprobacionOrdenSalidaOT.do?operacion=inicializa"></forward>-->
+        </action>
+        
+        <!-- =============================================================== -->
+        <!-- A J A X -->
+        <!-- =============================================================== -->
+        <!--<action name="GenericoForm" scope="request" path="/AjaxAction" type="pe.com.gp.action.AjaxAction" parameter="operacion"/>-->
+                 
+        <!-- =============================================================== -->
+        <!-- R E P O R T E S -->
+        <!-- =============================================================== -->
+        <!--<action name="ReportesForm" scope="request" path="/ReportesAction" type="pe.com.gp.action.ReportesAction" parameter="operacion"/>-->
+                
+        <!-- =============================================================== -->
+        <!-- R E P U E S T O S -->   
+        <!-- =============================================================== -->                         				
+        <!--<action name="RepuestosForm" scope="request" path="/RepTaller" type="pe.com.gp.action.RepuestosAction" parameter="operacion">
+            <forward name="CargaRep" path="/wpCargaRep.jsp"></forward>
+            <forward name="mensaje" path="/wpMensajeBolAlm.jsp"></forward>
+        </action>-->
+        <!--<action name="ProformaRepForm" scope="request" path="/ProformaRepAction" type="pe.com.gp.action.ProformaRepAction" parameter="operacion">
+            <forward name="emiproforma" path="/wpEmiProforma.jsp"></forward>            
+        </action>-->
+        <action name="FacRepMostradorForm" scope="request" path="/RepOfertaVentasAction" type="pe.com.gp.action.RepOfertaVentasAction" parameter="operacion">
+            <forward name="iniFacRepMostrador" path="/repOfertaVentas.jsp"></forward>
+            <forward name="conFacRepMostrador" path="/repOfertaVentas.jsp"></forward>
+            <forward name="msgConFacRepMostrador" path="/repOfertaVentas.jsp"></forward>
+        </action>
+        <action name="RepFacturaVentasForm" scope="request" path="/RepFacturaVentasAction" type="pe.com.gp.action.RepFacturaVentasAction" parameter="operacion">
+<<<<<<< .mine
+            <forward name="recibirEntrega" path="/repFacturaVentas.jsp"></forward>     
+            <forward name="msgConfirmarEntrega" path="/repFacturaVentas.jsp"></forward>     
+=======
+            <forward name="recibirEntrega" path="/repFacturaVentas.jsp"></forward>
+            <forward name="msgConfirmarEntrega" path="/repFacturaVentas.jsp"></forward>    
+            <forward name="msgConFacRepMostrador" path="/pedidoRepuestos.jsp"></forward>   
+            <forward name="inicializa" path="/pedidoRepuestos.jsp"></forward>     
+>>>>>>> .r117
+        </action>
+        <!--<action name="ProformaRepForm" scope="request" path="/ModProformaRepAction" type="pe.com.gp.action.ModProformaRepAction" parameter="operacion">
+            <forward name="modproforma" path="/wpModProformaRep.jsp"></forward>            
+        </action>-->
+        <action name="OfertaVentaPedidoForm" scope="request" path="/OfertaVentaPedidoAction" type="pe.com.gp.action.OfertaVentaPedidoAction" parameter="operacion">
+            <forward name="inicializa" path="/ofertaVentaPedido.jsp"></forward>
+        </action>        
+        <action name="GenericoForm" scope="request" path="/RepListaEntregasAction" type="pe.com.gp.action.RepListaEntregasAction" parameter="operacion">
+            <forward name="inicializa" path="/repListaEntregas.jsp"></forward>
+        </action>
+        <!--<action name="FacRepMostradorForm" scope="request" path="/PedidoOfertaRepAction" type="pe.com.gp.action.PedidoOfertaRepAction" parameter="operacion">
+            <forward name="inicializa" path="/consultaEntregaPedidos.jsp"></forward>            
+        </action>-->
+        <action name="FacRepMostradorForm" scope="request" path="/PedidoOfertaRepAction" type="pe.com.gp.action.PedidoOfertaRepAction" parameter="operacion">
+            <forward name="recibirCotizacion" path="/pedidoRepuestos.jsp"></forward>
+            <forward name="msgConFacRepMostrador" path="/pedidoRepuestos.jsp"></forward>
+            <forward name="inicializa" path="/pedidoRepuestos.jsp"></forward>
+        </action>
+        
+        <!-- =============================================================== -->
+        <!-- S E R V I C I O S -->   
+        <!-- =============================================================== -->              
+        <action name="LlamadaSerOfeVtaForm" scope="request" path="/LlamadaSerOfeVtaAction" type="pe.com.gp.action.LlamadaSerOfeVtaAction" parameter="operacion">
+            <forward name="inicializa" path="/llamadaSerOfeVta.jsp"></forward>
+            <forward name="iniListaOfeVta" path="/llamadaSerListaOfeVta.jsp"></forward>            
+            <forward name="iniUpdOfertaVenta" path="/llamadaSerOfeVta.jsp"></forward>
+            <forward name="iniVerOfertaVenta" path="/llamadaSerOfeVta.jsp"></forward>
+        </action>
+        <action name="LlamadaSerOrdVtaForm" scope="request" path="/LlamadaSerOrdVtaAction" type="pe.com.gp.action.LlamadaSerOrdVtaAction" parameter="operacion">
+            <forward name="inicializa" path="/llamadaSerOrdVta.jsp"></forward>
+            <forward name="iniUpdOrdenVenta" path="/llamadaSerOrdVta.jsp"></forward>
+            <forward name="iniVerOrdenVenta" path="/llamadaSerOrdVta.jsp"></forward>
+        </action>
+        <action name="LlamadaServicioForm" scope="request" path="/LlamadaServicioAction" type="pe.com.gp.action.LlamadaServicioAction" parameter="operacion">
+            <forward name="inicializa" path="/llamadaServicio.jsp"></forward>
+            <forward name="crearLlamadaServicio" path="/llamadaServicio.jsp"></forward>
+        </action>
+        
+        <!-- =============================================================== -->
+        <!-- G E N E R A L E S -->   
+        <!-- =============================================================== -->
+        <action name="TarjetaEquipoForm" scope="request" path="/TarjetaEquipoAction" type="pe.com.gp.action.TarjetaEquipoAction" parameter="operacion">
+            <forward name="inicializa" path="/tarjetaEquipo.jsp"></forward>
+            <forward name="crearTarjetaEquipo" path="/tarjetaEquipo.jsp"></forward>
+        </action>
+        
+        
+        <action name="SocioNegocioForm" scope="request" path="/SocioNegocioAction" type="pe.com.gp.action.SocioNegocioAction" parameter="operacion">
+            <forward name="inicializa" path="/socioNegocioCliente.jsp"></forward>
+            <forward name="crearSocioNegocioCliente" path="/socioNegocioCliente.jsp"></forward>            
+        </action>
+                                
+    </action-mappings>    
+    <message-resources parameter="pe.com.gp.recursos.Recursos"></message-resources>
+</struts-config>
